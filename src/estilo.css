@@ -1,5 +1,44 @@
-h1{
+.screen{
     display: flex;
+    align-items: center;
     justify-content: center;
-    color: red;
+    padding-top: 200px;
+    padding-right: 110px;
+}
+
+.all{
+    display: flex;
+    flex-direction: column;
+    gap: 185px;
+    margin-left: 0;
+}
+
+.sidebar{
+    background-color: bisque;
+    background-size: cover;
+    height: 60px;
+    gap: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 250px;
+}
+
+.user{
+    border-radius: 100%;
+    margin-left: 10px;
+}
+
+img{
+    width: 35px;
+    height: 35px;
+}
+
+.neymar{
+    width: 250px;
+    height: 200px;
 }
