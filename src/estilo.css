@@ -23,11 +23,16 @@
     bottom: 0;
     left: 0;
     right: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .user{
-    border-radius: 100%;
     margin-left: 10px;
+}
+
+.italo{
+    border-radius: 50%;
 }
 
 img{
