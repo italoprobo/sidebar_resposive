@@ -2,40 +2,193 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 200px;
+    flex: 1;
 }
 
 .all{
     display: flex;
     flex-direction: column;
-    gap: 185px;
-    margin-left: 0;
+    height: calc(100vh - 16px);
 }
 
 .sidebar{
     background-color: bisque;
-    background-size: cover;
-    height: 60px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
     padding-left: 1rem;
-    padding-right: 1rem;
+    padding-right: 1rem;;
+}
+
+.video{
+    width: 350px;
+    height: 300px
 }
 
 .user{
     margin-left: 10px;
 }
 
-.italo{
+.userpic{
     border-radius: 50%;
 }
 
 img{
     width: 35px;
     height: 35px;
+}
+
+span, button, a{
+    display: none;
+}
+
+hr{
+    display: none;
+}
+
+
+
+@media (min-width: 700px){
+
+.all{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.video{
+    width: 550px;
+    height: 400px
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;   
+    height: 100%;
+    justify-content: flex-start;
+    gap: 35px;
+    padding-top: 15px;
+    position: relative;
+    width: 20%;
+}
+
+.screen{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex: 1;
+}
+
+.user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userpic{
+    display: flex;
+}
+
+.userinfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+span{
+    padding-top: 10px;
+    display: flex;
+}
+
+hr{
+    display: flex;
+    margin: 0px 0px;
+    border: none;
+    width: 180px;
+    height: 2px;
+    background-color: gray;
+}
+
+a{
+    display: flex;
+    color: black;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+}
+
+button{
+    display: block;
+    width: 100px;
+    height: 50px;
+    border: 0 ;
+    border-radius: 15px;
+    color: blue;
+    background-color: aqua;
+}
+}
+
+
+@media (min-width: 1200px){
+
+    .sidebar{
+        display: flex;
+        justify-content: flex-start ; 
+        gap: 80px; 
+    }
+
+    .user{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-right: auto;
+        padding-left: 30px;
+        gap: 30px;
+        padding-top: 30px;
+    }
+
+    .userpic{
+        display: flex;
+    }
+
+    .userinfo{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        align-items: flex-start;
+        font-size: large;
+    }
+
+    .item{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+        margin-right: auto;
+        padding-left: 30px;
+        gap: 100px;
+        font-size: larger;
+    }
+
+    button{
+        margin-top: auto;
+        display: flexbox;
+        width: 400px;
+        margin-bottom: 10px;
+    }
+
+    hr{
+        width: 400px;
+    }
 }
